@@ -34,7 +34,7 @@ BetMap is a hotel booking application that allows users to discover and book hot
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:hamzamza/betmap.git
    cd betmap
 
 Install the server dependencies  & start it :
