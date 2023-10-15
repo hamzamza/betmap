@@ -35,7 +35,6 @@ return (
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-
         <Route path="/hotels" element={<List />} />
         <Route path="/hotel/select/:id" element={<Hotel />} />
         <Route path="/login" element={<Login />} />

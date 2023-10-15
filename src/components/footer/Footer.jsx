@@ -1,10 +1,14 @@
 import { useLocation } from "react-router-dom";
-
+import wave from "../../assets/images/wave.svg";
+import MailList from "../maillist/MailList";
 
 const Footer = () => {
   return (
-    <div className="">
-      <div className="grid grid-cols-3 lg:flex justify-around text-white bg-blue-500 font-mono py-6">
+    <div className=" "> 
+            <img src={wave} className="w-full -mb-1" alt="wave" />
+   <div className="bg-blue-500">
+      <MailList />
+      <div className="grid grid-cols-3 lg:flex justify-around text-white  font-mono py-6">
         <ul className="flex flex-col  gap-3 p-3  ">
           <li className="fListItem">Countries</li>
           <li className="fListItem">Regions</li>
@@ -33,6 +37,8 @@ const Footer = () => {
       </div>
       <div className="text-center text-white bg-blue-500 ">Copyright © 2022 hamza douaij <span className="text-yellow-400">MERN</span> stack web Developer.</div>
     </div>
+    </div>
+
   );
 };
 

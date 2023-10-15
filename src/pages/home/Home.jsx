@@ -12,11 +12,11 @@ import HotelsByGrid from "../../components/HotelsByGrid";
 import Fitlers from "../../components/filters/filters";
 // import SearchItem from "../../components/searchItem/SearchItem";
 function Home() {
-  
-  
+
   return (
     <div className=" relative ">
        <Navbar />
+    
       <Header search={true} />
       <Fitlers/>
       <HotelsByGrid/>
@@ -24,10 +24,9 @@ function Home() {
         <div className="">
         <PropertyList />   
         </ div>
-        <div className="bluetogrouna bg-blue-500"> 
-              <MailList />
+ 
               <Footer/></div>
-      </div>
+ 
     </div>
   );
 }

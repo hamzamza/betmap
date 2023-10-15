@@ -14,7 +14,6 @@ root.render(
         <App />
       </SearchContextProvider>
     </AuthContextProvider>
-
   </React.StrictMode>
 );
 

@@ -8,7 +8,7 @@ const INITIAL_STATE = {
         room: undefined
     },
 }
-const NEW_SEARCH = "NEW_SEARCH"
+export const NEW_SEARCH = "NEW_SEARCH"
 const RESETE_STATE = "RESETE_STATE"
 
 export const SearchContext = createContext(INITIAL_STATE)

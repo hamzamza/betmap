@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { server } from "../../Backedn";
 
 import { AuthContext } from "../../context/authContext";
-import logo from "../../assets/images/logo3.png"
+import logo from "../../assets/images/cover.png"
 
 function Login() {
   const LOGIN_START = "LOGIN_START";
@@ -53,14 +53,15 @@ function Login() {
     }
   };
   return (
-    <div className="">
-      <section class="bg-gray-50   ">
+    <div className=" flex ">
+    
+      <section class="bg-gray-50  w-full ">
   <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto min-h-screen lg:py-0">
-      <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 ">
-      <img class=" h-20 rounded-lg " src={logo} alt="logo"/>
-        
-      </a>
-      <div class="w-full bg-white rounded-lg shadow  md:mt-0 sm:max-w-md xl:p-0">
+    
+      <div class="w-full     md:mt-0 sm:max-w-md xl:p-0"> 
+
+      <img src={logo} alt="logo" className="  h-40 mx-auto"/>
+
           <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl ">
                   Sign in to your account
@@ -95,6 +96,10 @@ function Login() {
       </div>
   </div>
 </section>
+<div className="hidden lg:block w-1/2 h-screen" style={{ backgroundImage: `url('/assets/images/morocan_backgroudn_tol.jpg')`, backgroundSize:"cover" , backgroundRepeat:"no-repeat"}}>
+    <div className="h-full w-20 bg-gradient-to-r via-gray-50 from-gray-50 "></div>
+      </div>
+
     </div>
   );
 }
