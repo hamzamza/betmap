@@ -1,0 +1,95 @@
+.sidbare {
+  
+  top: 0;
+  height: max-content;
+  border: lightgray solid 1px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  .togglebutton {
+    display: none;
+  }
+  @media (max-width: 1158px) {
+     
+      padding-top: 5rem;
+    
+  }
+  min-height: 90vh;
+  .top {
+    cursor: pointer;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    padding-inline: 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 6px;
+
+    .logo-img {
+      width: 45px;
+    }
+    .logo {
+      color: #f7b485;
+      font-weight: 800;
+      font-size: 20px;
+    }
+  }
+  .center {
+    border-radius: 6px;
+    padding: 0.5rem;
+    .side {
+      box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+        rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+
+      border-radius: 6px;
+
+      .side-items-header {
+        text-transform: uppercase;
+        color: rgb(154, 164, 172);
+      }
+      .side-item {
+        cursor: pointer;
+        border-radius: 6px;
+        &:hover {
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        .co-color {
+          color: #545455;
+        }
+        padding: 13px;
+        display: flex;
+        gap: 0.5rem;
+      }
+    }
+  }
+  .bottom {
+    .side-items-header {
+      text-transform: uppercase;
+      color: rgb(154, 164, 172);
+      padding-left: 1rem;
+    }
+    .bottom-item {
+      display: flex;
+      padding-top: 10px;
+      justify-content: center;
+      gap: 10px;
+      .carre {
+        width: 30%;
+        text-align: center;
+        box-shadow: #f7b58525 0px 0px 5px 0px,
+          rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+        padding: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        &.dark {
+          background: rgb(34, 49, 114);
+          color: white;
+        }
+        &.light {
+          background-color: aliceblue;
+        }
+      }
+    }
+    padding-block: 1rem;
+  }
+}

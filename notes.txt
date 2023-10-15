@@ -1,0 +1,15 @@
+the best way to use use contexwt is to export it 
+
+export const context = createContext(" initial state" )
+// 
+const Reducer = (state,action)=>{
+    some logic here 
+return "the new state "
+}
+
+const [state,dispatch] = useReducer(reducer , " inital state ")
+export const contextProvider = ({children })=>{
+return <constxt.provider value ={ state, dispatch } >
+ {children }
+ </context.provider> 
+}   

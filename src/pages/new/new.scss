@@ -1,0 +1,20 @@
+.newcontainer {
+  .leftt {
+    padding: 2rem;
+
+    .userimage {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  }
+  .detailscontainer {
+    .btn {
+      color: white;
+      background-color: rgb(113, 190, 83);
+      &:hover {
+        background-color: rgba(113, 190, 83, 0.74);
+      }
+    }
+  }
+}
