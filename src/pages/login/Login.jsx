@@ -99,7 +99,6 @@ function Login() {
 <div className="hidden lg:block w-1/2 h-screen" style={{ backgroundImage: `url('/assets/images/morocan_backgroudn_tol.jpg')`, backgroundSize:"cover" , backgroundRepeat:"no-repeat"}}>
     <div className="h-full w-20 bg-gradient-to-r via-gray-50 from-gray-50 "></div>
       </div>
-
     </div>
   );
 }

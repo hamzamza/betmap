@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/images/cover.png";
 import { useContext, useReducer, useState } from "react";
 import { AuthContext } from "../../context/authContext";
- 
+
 import Search from "../search/search";
 import { Button } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
